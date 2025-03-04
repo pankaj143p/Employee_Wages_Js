@@ -133,6 +133,8 @@ const workDayOperations = () => {
 
   return { totalWage, totalHours, fullWorkDays, partWorkDays, noWorkDays };
 };
+//uc12
+let employeeData = { id: 1, name: "Niketa", salary: 60000 };
 //uc1
 console.log(isPresent);
 // uc2
@@ -158,3 +160,5 @@ storeDailyWorkData();
 console.log(dailyWorkData);
 //uc11
 console.log(workDayOperations());
+//uc12
+console.log(employeeData);

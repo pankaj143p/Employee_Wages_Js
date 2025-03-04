@@ -28,9 +28,19 @@ const getWorkHours = () => {
       return 0;
   }
 };
+//uc4
+const calculateMonthlyWage = () => {
+  let totalWage = 0;
+  for (let i = 0; i < 20; i++) {
+    totalWage += getDailyWage();
+  }
+  return totalWage;
+};
 //uc1
 console.log(isPresent);
 // uc2
 console.log(getDailyWage());
 //uc3
 console.log(getWorkHours());
+//uc4
+console.log(calculateMonthlyWage());

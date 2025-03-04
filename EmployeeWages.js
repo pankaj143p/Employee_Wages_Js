@@ -104,7 +104,17 @@ const wageAndHoursMap = () => {
   });
   return { totalWage, fullDays, partDays, noWorkDays };
 };
-
+//uc10
+let dailyWorkData = [];
+const storeDailyWorkData = () => {
+  for (let i = 0; i < 20; i++) {
+    dailyWorkData.push({
+      day: `Day ${i + 1}`,
+      hoursWorked: getWorkHours(),
+      wageEarned: getWorkHours() * 20,
+    });
+  }
+};
 //uc1
 console.log(isPresent);
 // uc2
@@ -125,3 +135,6 @@ storeWageInMap();
 console.log(dailyWageMap);
 //uc9
 console.log(wageAndHoursMap());
+//uc10
+storeDailyWorkData();
+console.log(dailyWorkData);
